@@ -11,8 +11,8 @@
 	
 	<context:component-scan base-package="kro.kr.agreatfarm"/>
 	<mvc:annotation-driven/>
-	<mvc:resources location="/WEB-RES/" mapping="/WEB-RES/**"/>
-
+	<mvc:resources location="/resources/" mapping="/resources/**"/>
+	
 	<!-- dataSource settting 디비 세팅의 첫번째 -->
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />

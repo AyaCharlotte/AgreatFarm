@@ -1,18 +1,28 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Login</title>
-</head>
-<body>
-	<form method="post" action="login">
-		<fieldset>
-			<legend>Agreat Farm - Login</legend>
-			Email <input type="text" name="email"/>
-			password <input type="password" name="password"/>
-			<input type="submit" value="login"/>
-		</fieldset>
-	</form>
-</body>
+  <head>
+	<meta charset="UTF-8">
+    <title>Agreat Farm</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="resources/css/login_form_style.css">
+  </head>
+
+  <body>
+    <div class="body"></div>
+  		<div class="grad"></div>
+  		<div class="header">
+  			<div>Agreat<span>Farm</span></div>
+  		</div>
+  		<br>
+  		<div class="login">
+  			<form action='login' method='post'>	
+				<input type="text" placeholder="username" name="username"><br>
+				<input type="password" placeholder="password" name="password"><br>
+				<input type="submit" value="Login">
+			</form>
+  		</div>
+  </body>
 </html>

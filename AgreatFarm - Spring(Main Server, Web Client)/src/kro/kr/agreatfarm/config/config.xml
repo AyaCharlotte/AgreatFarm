@@ -3,5 +3,7 @@
 <configuration>
 	<typeAliases>
 		<typeAlias type="kro.kr.agreatfarm.vo.MemberVO" alias="member"/>
+		<typeAlias type="kro.kr.agreatfarm.vo.FarminfoVO" alias="farminfo"/>
+		<typeAlias type="kro.kr.agreatfarm.vo.ManagingTipVO" alias="managing"/>
 	</typeAliases>
 </configuration>
