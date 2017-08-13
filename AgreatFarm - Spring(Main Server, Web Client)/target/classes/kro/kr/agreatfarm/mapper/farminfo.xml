@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="farminfo">
+	<insert id="addFarminfo" parameterType="farminfo">
+		insert into farminfo values(#{m_num}, NULL, #{f_url}, #{f_cagename}, #{f_type}, #{f_count}, #{f_location})
+	</insert>
+	
+	<select id="getFarminfo" parameterType="int" resultType="farminfo">
+		select * from farminfo where m_num = #{m_num}
+	</select>
+	
+	<update id="fixFarminfo" parameterType="farminfo">
+		update 	farminfo 
+		set 	f_cagename = #{f_cagename}, f_type = #{f_type}, f_count = #{f_count}, f_location = #{f_location}
+		where 	f_num = #{f_num}
+	</update>
+
+</mapper>
